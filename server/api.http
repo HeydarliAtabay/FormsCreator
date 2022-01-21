@@ -1,0 +1,49 @@
+### Getting all surveys
+GET http://localhost:3001/api/forms
+
+
+### Adding new form
+POST http://localhost:3001/api/forms
+Content-Type: application/json
+
+{ "title": "Zalim" }
+
+### Getting questions of selected form
+GET http://localhost:3001/api/questions/form/1
+
+
+### Adding new question
+POST http://localhost:3001/api/questions
+Content-Type: application/json
+
+{ "text":"This is test Question", "columns":"One;Two;Three", "rows":"four;five;six","form_id":2,"min":2,"max":5 }
+
+
+
+### Delete existing question
+DELETE http://localhost:3001/api/questions/delete/4
+
+### Update published
+
+PUT http://localhost:3001/api/forms/update/published/1
+
+
+### Update number of responders
+
+PUT http://localhost:3001/api/forms/update/number/1
+
+
+### Getting answers
+GET http://localhost:3001/api/answers/form/1
+
+
+
+### Adding new answer
+POST http://localhost:3001/api/answers
+Content-Type: application/json
+
+{ "name":"Orkhan", "form_id":3, "question_id":4,"answers":"00;11;20","code":628 }
+
+
+### Getting answers
+GET http://localhost:3001/api/questions/errors/3

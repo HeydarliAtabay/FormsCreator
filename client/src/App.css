@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.cont{
+  padding-top: 5rem;
+  width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.addbtn{
+  padding-top: 5rem;
+  position: absolute;
+  right: 25px;
+}
+.deletecont {
+  position: absolute;
+  right: -15px;
+  top: 10px;
+}
+
+.loginForm {
+  position: relative;
+  padding: 2rem;
+  border: 2px solid rgb(226, 221, 221);
+  border-radius: 25px;
+  margin: 8rem auto auto auto;
+  width: 370px;
+  height: max-content;
+}
+
+.loginContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.userdet {
+  position: absolute;
+  left: -5px;
+  padding-top: 4rem;
+  border: 2px solid rgb(41, 39, 39);
+  border-radius: 25px;
+  width: 250px;
+}
+.warningText{
+  color: red;
+}
+.successText{
+  color: green;
+}
